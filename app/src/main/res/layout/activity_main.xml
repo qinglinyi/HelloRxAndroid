@@ -34,6 +34,7 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"/>
+
         <Button
             android:id="@+id/simpleMapBtn"
             android:layout_width="match_parent"
@@ -42,6 +43,54 @@
             android:background="@drawable/btn_bg_selector"
             android:onClick="onClick"
             android:text="Simple  Map"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_selector"
+            android:onClick="onClick"
+            android:text="create"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/simpleSchedulerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_selector"
+            android:onClick="onClick"
+            android:text="Simple  Scheduler"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/flatMapBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_selector"
+            android:onClick="onClick"
+            android:text="flatMap"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/filterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_selector"
+            android:onClick="onClick"
+            android:text="filter"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"/>

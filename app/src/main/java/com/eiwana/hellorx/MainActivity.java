@@ -24,6 +24,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.simpleMapBtn:
                 startActivity(new Intent(this, SimpleMapActivity.class));
                 break;
+            case R.id.createBtn:
+                startActivity(new Intent(this, CreateActivity.class));
+                break;
+            case R.id.simpleSchedulerBtn:
+                startActivity(new Intent(this, SimpleSchedulerActivity.class));
+                break;
+            case R.id.flatMapBtn:
+                startActivity(new Intent(this, FlatMapActivity.class));
+                break;
+            case R.id.filterBtn:
+                startActivity(new Intent(this, FilterActivity.class));
+                break;
         }
     }
 }

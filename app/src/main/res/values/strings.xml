@@ -5,4 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_simple_observable">SimpleObservableActivity</string>
     <string name="title_activity_simple_subscriber">SimpleSubscriberActivity</string>
+    <string name="title_activity_create">CreateActivity</string>
+    <string name="title_activity_simple_scheduler">SimpleSchedulerActivity</string>
+    <string name="title_activity_flat_map">FlatMapActivity</string>
+    <string name="title_activity_filter">FilterActivity</string>
 </resources>
