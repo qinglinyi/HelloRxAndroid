@@ -1,7 +1,6 @@
 package com.eiwana.hellorx;
 
 import android.os.Bundle;
-import android.view.Menu;
 import android.widget.TextView;
 
 import rx.Observable;
@@ -44,10 +43,5 @@ public class SimpleObservableActivity extends BaseActivity {
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_simple_observable, menu);
-        return true;
-    }
 
 }

@@ -36,6 +36,18 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.filterBtn:
                 startActivity(new Intent(this, FilterActivity.class));
                 break;
+            case R.id.concatAndFlatMapBtn:
+                startActivity(new Intent(this, ConcatAndFlatMapActivity.class));
+                break;
+            case R.id.rxViewBtn:
+                startActivity(new Intent(this, RxViewActivity.class));
+                break;
+            case R.id.schedulersBtn:
+                startActivity(new Intent(this, SchedulersActivity.class));
+                break;
+            case R.id.transformerBtn:
+                startActivity(new Intent(this, TransformerActivity.class));
+                break;
         }
     }
 }

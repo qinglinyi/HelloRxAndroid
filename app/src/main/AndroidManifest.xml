@@ -39,6 +39,22 @@
             android:name=".FilterActivity"
             android:label="@string/title_activity_filter" >
         </activity>
+        <activity
+            android:name=".ConcatAndFlatMapActivity"
+            android:label="@string/title_activity_concat_and_flat_map" >
+        </activity>
+        <activity
+            android:name=".RxViewActivity"
+            android:label="@string/title_activity_rx_view" >
+        </activity>
+        <activity
+            android:name=".SchedulersActivity"
+            android:label="@string/title_activity_schedulers" >
+        </activity>
+        <activity
+            android:name=".TransformerActivity"
+            android:label="@string/title_activity_transformer" >
+        </activity>
     </application>
 
 </manifest>

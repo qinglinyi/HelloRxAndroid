@@ -6,95 +6,147 @@
 
     <include layout="@layout/topbar"/>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/simpleObservableBtn"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_bg_selector"
-            android:onClick="onClick"
-            android:text="Simple  Observable"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
+            android:padding="15dp"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/simpleSubscriberBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_bg_selector"
-            android:onClick="onClick"
-            android:text="Simple  Subscriber"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
+            <Button
+                android:id="@+id/simpleObservableBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="Simple  Observable"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
 
-        <Button
-            android:id="@+id/simpleMapBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_bg_selector"
-            android:onClick="onClick"
-            android:text="Simple  Map"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
+            <Button
+                android:id="@+id/simpleSubscriberBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="Simple  Subscriber"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
 
-        <Button
-            android:id="@+id/createBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_bg_selector"
-            android:onClick="onClick"
-            android:text="create"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
+            <Button
+                android:id="@+id/simpleMapBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="Simple  Map"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
 
-        <Button
-            android:id="@+id/simpleSchedulerBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_bg_selector"
-            android:onClick="onClick"
-            android:text="Simple  Scheduler"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
+            <Button
+                android:id="@+id/createBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="create"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
 
-        <Button
-            android:id="@+id/flatMapBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_bg_selector"
-            android:onClick="onClick"
-            android:text="flatMap"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
+            <Button
+                android:id="@+id/simpleSchedulerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="Simple  Scheduler"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
 
-        <Button
-            android:id="@+id/filterBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_bg_selector"
-            android:onClick="onClick"
-            android:text="filter"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"/>
-    </LinearLayout>
+            <Button
+                android:id="@+id/flatMapBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="flatMap"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
 
+            <Button
+                android:id="@+id/filterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="filter"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
 
+            <Button
+                android:id="@+id/concatAndFlatMapBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="Concat And FlatMap"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/rxViewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="RxView"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/schedulersBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="schedulers"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/transformerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="transformer"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>

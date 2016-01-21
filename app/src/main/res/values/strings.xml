@@ -9,4 +9,9 @@
     <string name="title_activity_simple_scheduler">SimpleSchedulerActivity</string>
     <string name="title_activity_flat_map">FlatMapActivity</string>
     <string name="title_activity_filter">FilterActivity</string>
+    <string name="title_activity_concat_and_flat_map">ConcatAndFlatMapActivity</string>
+    <string name="title_activity_merge">MergeActivity</string>
+    <string name="title_activity_rx_view">RxViewActivity</string>
+    <string name="title_activity_schedulers">SchedulersActivity</string>
+    <string name="title_activity_transformer">TransformerActivity</string>
 </resources>
