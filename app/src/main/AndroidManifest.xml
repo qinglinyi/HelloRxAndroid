@@ -55,6 +55,10 @@
             android:name=".TransformerActivity"
             android:label="@string/title_activity_transformer" >
         </activity>
+        <activity
+            android:name=".SideEventMethodActivity"
+            android:label="@string/title_activity_side_event_mothod" >
+        </activity>
     </application>
 
 </manifest>

@@ -14,4 +14,5 @@
     <string name="title_activity_rx_view">RxViewActivity</string>
     <string name="title_activity_schedulers">SchedulersActivity</string>
     <string name="title_activity_transformer">TransformerActivity</string>
+    <string name="title_activity_side_event_mothod">SideEventMothodActivity</string>
 </resources>

@@ -48,6 +48,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.transformerBtn:
                 startActivity(new Intent(this, TransformerActivity.class));
                 break;
+            case R.id.sideEventMethodBtn:
+                startActivity(new Intent(this, SideEventMethodActivity.class));
+                break;
         }
     }
 }
