@@ -158,6 +158,18 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/frodoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="frodo"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
         </LinearLayout>
 
     </ScrollView>
