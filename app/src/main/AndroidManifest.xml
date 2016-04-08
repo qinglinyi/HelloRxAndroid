@@ -1,63 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.eiwana.hellorx" >
+<manifest
+    package="com.eiwana.hellorx"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".SimpleObservableActivity"
-            android:label="@string/title_activity_simple_observable" />
+            android:label="@string/title_activity_simple_observable"/>
         <activity
             android:name=".SimpleSubscriberActivity"
-            android:label="@string/title_activity_simple_subscriber" />
-        <activity android:name=".SimpleMapActivity" />
+            android:label="@string/title_activity_simple_subscriber"/>
+        <activity android:name=".SimpleMapActivity"/>
         <activity
             android:name=".CreateActivity"
-            android:label="@string/title_activity_create" >
+            android:label="@string/title_activity_create">
         </activity>
         <activity
             android:name=".SimpleSchedulerActivity"
-            android:label="@string/title_activity_simple_scheduler" >
+            android:label="@string/title_activity_simple_scheduler">
         </activity>
         <activity
             android:name=".FlatMapActivity"
-            android:label="@string/title_activity_flat_map" >
+            android:label="@string/title_activity_flat_map">
         </activity>
         <activity
             android:name=".FilterActivity"
-            android:label="@string/title_activity_filter" >
+            android:label="@string/title_activity_filter">
         </activity>
         <activity
             android:name=".ConcatAndFlatMapActivity"
-            android:label="@string/title_activity_concat_and_flat_map" >
+            android:label="@string/title_activity_concat_and_flat_map">
         </activity>
         <activity
             android:name=".RxViewActivity"
-            android:label="@string/title_activity_rx_view" >
+            android:label="@string/title_activity_rx_view">
         </activity>
         <activity
             android:name=".SchedulersActivity"
-            android:label="@string/title_activity_schedulers" >
+            android:label="@string/title_activity_schedulers">
         </activity>
         <activity
             android:name=".TransformerActivity"
-            android:label="@string/title_activity_transformer" >
+            android:label="@string/title_activity_transformer">
         </activity>
         <activity
             android:name=".SideEventMethodActivity"
-            android:label="@string/title_activity_side_event_mothod" >
+            android:label="@string/title_activity_side_event_method">
+        </activity>
+        <activity
+            android:name=".IntervalActivity"
+            android:label="@string/title_activity_interval">
+        </activity>
+        <activity
+            android:name=".SubjectActivity"
+            android:label="@string/title_activity_subject">
         </activity>
     </application>
 

@@ -51,6 +51,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.sideEventMethodBtn:
                 startActivity(new Intent(this, SideEventMethodActivity.class));
                 break;
+            case R.id.intervalBtn:
+                startActivity(new Intent(this, IntervalActivity.class));
+                break;
+            case R.id.subjectBtn:
+                startActivity(new Intent(this, SubjectActivity.class));
+                break;
         }
     }
 }

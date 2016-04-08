@@ -170,6 +170,28 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="14sp"/>
+            <Button
+                android:id="@+id/intervalBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="interval"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+            <Button
+                android:id="@+id/subjectBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_selector"
+                android:onClick="onClick"
+                android:text="subject"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
         </LinearLayout>
 
     </ScrollView>
