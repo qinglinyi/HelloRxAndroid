@@ -163,7 +163,6 @@
             android:label="@string/title_activity_distinct">
             <intent-filter>
                 <action android:name="com.eiwana.intent.action.RX_DEMO"/>
-
                 <category android:name="com.eiwana.intent.category.RX_DEMO"/>
             </intent-filter>
         </activity>
@@ -172,7 +171,14 @@
             android:label="@string/title_activity_skip">
             <intent-filter>
                 <action android:name="com.eiwana.intent.action.RX_DEMO"/>
-
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ElementAtActivity"
+            android:label="@string/title_activity_element_at">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
                 <category android:name="com.eiwana.intent.category.RX_DEMO"/>
             </intent-filter>
         </activity>

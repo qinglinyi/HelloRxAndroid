@@ -9,12 +9,13 @@
     <include layout="@layout/topbar"/>
 
     <TextView
+        android:gravity="center"
         android:id="@+id/simpleTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:textColor="@color/black_38"
-        android:textSize="15sp"/>
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/simpleTv2"
