@@ -44,9 +44,9 @@ public class SubjectActivity extends BaseActivity {
 
         textView = (TextView) findViewById(R.id.textView);
         // publishSubject();
-        //         behaviorSubject();
+         behaviorSubject();
         //        replaySubject();
-        asyncSubject();
+//        asyncSubject();
 
 
     }

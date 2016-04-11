@@ -17,4 +17,8 @@
     <string name="title_activity_side_event_method">SideEventMethodActivity</string>
     <string name="title_activity_interval">IntervalActivity</string>
     <string name="title_activity_subject">SubjectActivity</string>
+    <string name="title_activity_rx_lifecycle">RxLifecycleActivity</string>
+    <string name="title_activity_take">TakeActivity</string>
+    <string name="title_activity_distinct">DistinctActivity</string>
+    <string name="title_activity_skip">SkipActivity</string>
 </resources>

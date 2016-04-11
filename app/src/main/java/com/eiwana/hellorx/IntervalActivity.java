@@ -21,8 +21,8 @@ public class IntervalActivity extends BaseActivity {
         setContentView(R.layout.activity_interval);
         textView = (TextView) findViewById(R.id.textView);
 
-        // interval：指定时间间隔重复call
-        subscribe = Observable.interval(1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
+        // interval：指定时间间隔重复call 第一个数字的，第二个数字是间隔
+        subscribe = Observable.interval(1, 1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
                 .subscribe(new Action1<Long>() {
                     @Override
                     public void call(Long aLong) {

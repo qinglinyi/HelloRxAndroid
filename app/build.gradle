@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.fernandocejas.frodo'
+apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 23
@@ -10,7 +10,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
     }
     buildTypes {
         release {
@@ -18,12 +18,29 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    // 设置java库的版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
+
+retrolambda {
+    javaVersion JavaVersion.VERSION_1_7
+}
+
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'com.jakewharton.rxbinding:rxbinding:0.3.0'
     compile 'com.trello:rxlifecycle:0.5.0'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
+    compile 'com.android.support:design:23.2.1'
 }
+
+

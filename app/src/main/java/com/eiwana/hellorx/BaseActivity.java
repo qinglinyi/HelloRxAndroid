@@ -1,9 +1,11 @@
 package com.eiwana.hellorx;
 
 
+import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 
 public class BaseActivity extends AppCompatActivity {
 
@@ -36,6 +38,11 @@ public class BaseActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @SuppressWarnings("unchecked")
+    public <T extends View> T find(@IdRes int id) {
+        return (T) findViewById(id);
     }
 
 }

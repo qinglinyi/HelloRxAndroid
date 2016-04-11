@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    package="com.eiwana.hellorx"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest package="com.eiwana.hellorx"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -19,54 +18,163 @@
         </activity>
         <activity
             android:name=".SimpleObservableActivity"
-            android:label="@string/title_activity_simple_observable"/>
+            android:label="@string/title_activity_simple_observable">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SimpleSubscriberActivity"
-            android:label="@string/title_activity_simple_subscriber"/>
-        <activity android:name=".SimpleMapActivity"/>
+            android:label="@string/title_activity_simple_subscriber">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SimpleMapActivity">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
         <activity
             android:name=".CreateActivity"
             android:label="@string/title_activity_create">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".SimpleSchedulerActivity"
             android:label="@string/title_activity_simple_scheduler">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".FlatMapActivity"
             android:label="@string/title_activity_flat_map">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".FilterActivity"
             android:label="@string/title_activity_filter">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".ConcatAndFlatMapActivity"
             android:label="@string/title_activity_concat_and_flat_map">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".RxViewActivity"
             android:label="@string/title_activity_rx_view">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".SchedulersActivity"
             android:label="@string/title_activity_schedulers">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".TransformerActivity"
             android:label="@string/title_activity_transformer">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".SideEventMethodActivity"
             android:label="@string/title_activity_side_event_method">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".IntervalActivity"
             android:label="@string/title_activity_interval">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".SubjectActivity"
             android:label="@string/title_activity_subject">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RxLifecycleActivity"
+            android:label="@string/title_activity_rx_lifecycle">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TakeActivity"
+            android:label="@string/title_activity_take">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DistinctActivity"
+            android:label="@string/title_activity_distinct">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SkipActivity"
+            android:label="@string/title_activity_skip">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
         </activity>
     </application>
 
