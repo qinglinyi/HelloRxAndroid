@@ -17,7 +17,7 @@ import rx.subjects.PublishSubject;
 import rx.subjects.ReplaySubject;
 import rx.subscriptions.CompositeSubscription;
 
-public class SubjectActivity extends BaseActivity {
+public class SubjectActivity extends SimpleBaseActivity {
 
     //subject是一个神奇的对象，它可以是一个Observable同时也可以是一个Observer：它作为连接这两个世界的一座桥梁。
     // 一个Subject可以订阅一个Observable，就像一个观察者，并且它可以发射新的数据，或者传递它接受到的数据，
@@ -40,9 +40,7 @@ public class SubjectActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subject);
 
-        textView = (TextView) findViewById(R.id.textView);
         // publishSubject();
          behaviorSubject();
         //        replaySubject();

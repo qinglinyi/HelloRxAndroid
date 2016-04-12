@@ -1,3 +1,3 @@
 # HelloRxAndroid
-RxAndroid demo
+RxJava and RxAndroid demo
 

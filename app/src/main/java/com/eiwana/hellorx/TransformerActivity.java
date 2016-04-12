@@ -2,7 +2,6 @@ package com.eiwana.hellorx;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import java.util.List;
 
@@ -10,18 +9,14 @@ import rx.Observable;
 import rx.functions.Action1;
 import rx.functions.Func1;
 
-public class TransformerActivity extends BaseActivity {
+public class TransformerActivity extends SimpleBaseActivity {
 
     public static final String alphabet = "abcdefghijklmnopqrstuvwsyz";
 
-    private TextView simpleTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple);
-        displayHomeAsUpEnabled(true);
-        simpleTv = (TextView) findViewById(R.id.simpleTv);
 
 
         Observable.Transformer<Integer, String> transformer = new MyTransformer();
@@ -32,7 +27,7 @@ public class TransformerActivity extends BaseActivity {
                 .subscribe(new Action1<String>() {
                     @Override
                     public void call(String s) {
-                        simpleTv.append(s + "\n");
+                        textView.append(s + "\n");
                     }
                 });
 

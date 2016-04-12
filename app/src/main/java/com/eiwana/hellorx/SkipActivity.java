@@ -3,20 +3,15 @@ package com.eiwana.hellorx;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.widget.TextView;
 
 import rx.Observable;
 
-public class SkipActivity extends RxBaseActivity {
+public class SkipActivity extends SimpleBaseActivity {
 
-    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_skip);
-        displayHomeAsUpEnabled(true);
-        textView = find(R.id.textView);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;

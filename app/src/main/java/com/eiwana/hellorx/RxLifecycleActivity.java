@@ -1,7 +1,6 @@
 package com.eiwana.hellorx;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,15 +14,12 @@ import rx.android.schedulers.AndroidSchedulers;
  * 2. RxBaseActivity 实现了RxLifecycle
  * 3. 从该例子开始使用RxBaseActivity,将不手动取消Subscription
  */
-public class RxLifecycleActivity extends RxBaseActivity {
+public class RxLifecycleActivity extends SimpleBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rx_lifecycle);
-        displayHomeAsUpEnabled(true);
 
-        final TextView textView = find(R.id.textView);
         Observable.interval(0, 1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
                 .compose(bindToLifecycle())
                 .doOnUnsubscribe(() -> System.out.println("===RxLifecycleActivity==onUnsubscribe==="))
