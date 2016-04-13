@@ -15,4 +15,8 @@ public class SimpleBaseActivity extends RxBaseActivity {
         textView = find(R.id.textView);
     }
 
+    protected void append(String append){
+        textView.append(append);
+    }
+
 }

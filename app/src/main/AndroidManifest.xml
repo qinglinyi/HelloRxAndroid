@@ -159,6 +159,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".TakeUntilAndWhileActivity"
+            android:label="@string/title_activity_take_until">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".DistinctActivity"
             android:label="@string/title_activity_distinct">
             <intent-filter>
@@ -192,6 +201,15 @@
         <activity
             android:name=".SamplingActivity"
             android:label="@string/title_activity_sampling">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MergeWithActivity"
+            android:label="@string/title_activity_merge">
             <intent-filter>
                 <action android:name="com.eiwana.intent.action.RX_DEMO"/>
 
