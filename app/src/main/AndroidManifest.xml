@@ -189,6 +189,15 @@
             android:name=".SimpleBaseActivity"
             android:theme="@style/AppTheme">
         </activity>
+        <activity
+            android:name=".SamplingActivity"
+            android:label="@string/title_activity_sampling">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

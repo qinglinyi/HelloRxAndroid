@@ -22,4 +22,5 @@
     <string name="title_activity_distinct">DistinctActivity</string>
     <string name="title_activity_skip">SkipActivity</string>
     <string name="title_activity_element_at">ElementAtActivity</string>
+    <string name="title_activity_sampling">SamplingActivity</string>
 </resources>

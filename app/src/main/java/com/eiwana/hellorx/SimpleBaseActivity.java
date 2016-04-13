@@ -3,7 +3,7 @@ package com.eiwana.hellorx;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public abstract class SimpleBaseActivity extends RxBaseActivity {
+public class SimpleBaseActivity extends RxBaseActivity {
 
     TextView textView;
 
