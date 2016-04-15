@@ -15,7 +15,7 @@ public class DistinctActivity extends SimpleBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        append("去重\n");
+        print("去重\n");
         distinct();
     }
 
@@ -24,7 +24,7 @@ public class DistinctActivity extends SimpleBaseActivity {
         Observable.just(1, 2, 3, 4, 5, 6, 1, 2, 3, 4)
                 .compose(bindToLifecycle())
                 .distinct()
-                .subscribe(integer -> append(String.valueOf(integer) + "\n"));
+                .subscribe(integer -> print(String.valueOf(integer) + "\n"));
     }
 
 

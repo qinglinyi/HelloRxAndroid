@@ -27,8 +27,8 @@ public class TakeUntilAndWhileActivity extends SimpleBaseActivity {
         Observable.just(1, 2, 3, 4, 5)
                 .compose(bindToLifecycle())
                 .takeUntil(integer -> integer > num)
-                .doOnCompleted(() -> append("=OnCompleted=\n"))
-                .subscribe(integer -> append(String.valueOf(integer) + "\n"));
+                .doOnCompleted(() -> print("=OnCompleted=\n"))
+                .subscribe(integer -> print(String.valueOf(integer) + "\n"));
     }
 
     // 第二个Observable开始执行的时候当前Observable结束
@@ -37,13 +37,13 @@ public class TakeUntilAndWhileActivity extends SimpleBaseActivity {
         Observable<String> observable = Observable.defer(this::getString)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io());
-        observable.subscribe(s -> append(s + "\n"));
+        observable.subscribe(s -> print(s + "\n"));
 
         Observable.interval(0, 1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
                 .compose(bindToLifecycle())
                 .takeUntil(observable)
-                .doOnCompleted(() -> append("=OnCompleted=\n"))
-                .subscribe(integer -> append(String.valueOf(integer) + "\n"));
+                .doOnCompleted(() -> print("=OnCompleted=\n"))
+                .subscribe(integer -> print(String.valueOf(integer) + "\n"));
     }
 
     private Observable<String> getString() {
@@ -59,7 +59,7 @@ public class TakeUntilAndWhileActivity extends SimpleBaseActivity {
     private void takeWhile() {
         Observable.just(1, 2, 3, 4)
                 .takeWhile(integer -> integer != 3)
-                .subscribe(integer -> append(String.valueOf(integer) + "\n"));
+                .subscribe(integer -> print(String.valueOf(integer) + "\n"));
     }
 
 }

@@ -24,4 +24,8 @@
     <string name="title_activity_skip">SkipActivity</string>
     <string name="title_activity_element_at">ElementAtActivity</string>
     <string name="title_activity_sampling">SamplingActivity</string>
+    <string name="title_activity_range">RangeActivity</string>
+    <string name="title_activity_repeat">RepeatActivity</string>
+    <string name="title_activity_buffer">BufferActivity</string>
+    <string name="title_activity_debounce">DebounceActivity</string>
 </resources>

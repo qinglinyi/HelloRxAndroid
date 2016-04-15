@@ -216,6 +216,42 @@
                 <category android:name="com.eiwana.intent.category.RX_DEMO"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RangeActivity"
+            android:label="@string/title_activity_merge">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RepeatActivity"
+            android:label="@string/title_activity_repeat">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BufferActivity"
+            android:label="@string/title_activity_buffer">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DebounceActivity"
+            android:label="@string/title_activity_debounce">
+            <intent-filter>
+                <action android:name="com.eiwana.intent.action.RX_DEMO"/>
+
+                <category android:name="com.eiwana.intent.category.RX_DEMO"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

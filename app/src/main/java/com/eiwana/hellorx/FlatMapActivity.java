@@ -47,7 +47,7 @@ public class FlatMapActivity extends BaseActivity {
 //                    @Override
 //                    public void call(Course course) {
 //                        Log.d(TAG, course.getName());
-//                        simpleTv.append(course.getName() + "\n");
+//                        simpleTv.print(course.getName() + "\n");
 //                    }
 //                });
 
